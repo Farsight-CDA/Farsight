@@ -9,4 +9,4 @@
 ### Repository Structure
 - [**Contracts**](https://github.com/Farsight-Tracking/Farsight-Contracts)
 - [**Website**](https://github.com/Farsight-Tracking/farsight-web)
-- [**API / Backend**](https://github.com/Farsight-Tracking/Farsight-Core)
+- [**API / Backend**](https://github.com/Farsight-Tracking/Farsight-Backend)
