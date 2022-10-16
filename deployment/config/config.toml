@@ -1,0 +1,28 @@
+[[provider]]
+url = "https://url"
+name = "providername"
+id = 1
+is_main = true
+
+[[provider.addresses]]
+address = "controller-address-here"
+c_type = "Controller"
+
+[[provider.addresses]]
+address = "paymentprovider-address-here"
+c_type = "PaymentProvider"
+
+[[provider.addresses]]
+address = "registrar-address-here"
+c_type = "Registrar"
+
+[webserver]
+bind_address = "0.0.0.0"
+port = 8081
+
+[image]
+python_bin = "/usr/bin/python3"
+image_cache = "./img_cache"
+bg_image = "./background.png"
+font = "./SourceCodePro-Bold.ttf"
+img_gen_script = "./main.py"

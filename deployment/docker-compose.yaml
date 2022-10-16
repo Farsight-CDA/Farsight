@@ -1,0 +1,37 @@
+version: "3.7"
+
+services:
+  backend:
+    image: 6adc5b45b02c
+    restart: always
+    ports:
+      - 127.0.0.1:8081:8081
+    working_dir: /app
+    volumes:
+      - ./config:/app/config
+    networks:
+      - backend
+    environment:
+      LOGLEVEL: 'debug'
+
+  nextjs:
+    image: f6f
+    restart: always
+    ports:
+      - 127.0.0.1:3000:3000
+    networks:
+      - backend
+
+  nginx:
+    image: nginx
+    restart: always
+    ports:
+      - 8000:8000
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/nginx.conf
+    networks:
+      - backend
+
+networks:
+  backend:
+    name: backendnet
