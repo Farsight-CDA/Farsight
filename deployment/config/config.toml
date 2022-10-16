@@ -1,3 +1,5 @@
+bridge_base_gas = 10
+
 [[provider]]
 url = "https://url"
 name = "providername"
